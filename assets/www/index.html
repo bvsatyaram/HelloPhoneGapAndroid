@@ -23,6 +23,7 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
         <title>Hello World</title>
     </head>
     <body>
@@ -33,8 +34,14 @@
                 <p class="event received">Device is Ready</p>
             </div>
         </div>
+        <section>
+	      <h1>Hello PhoneGap!</h1>
+	      <a href='#' onclick='incrementCounter();' data-counter='1' id='counter_trigger'>Press me!!</a>
+	      <div id='counter'></div>
+	    </section>
         <script type="text/javascript" src="cordova-2.7.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
